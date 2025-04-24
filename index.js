@@ -32,22 +32,7 @@ function coffeeTotal(flavors) {
     } else sum += 0;
   return sum;
 }
-//added to test my knowledge
-function otherTotal(flavors) {
-  let sum = 0;
-  for (let i = 0; i < flavors.length; i++)
-    if (
-      flavors[i] != "coffee" &&
-      flavors[i] != " coffee" &&
-      flavors[i] != "vanilla" &&
-      flavors[i] != " vanilla" &&
-      flavors[i] != "strawberry" &&
-      flavors[i] != " strawberry"
-    ) {
-      sum += 1;
-    } else sum += 0;
-  return sum;
-}
+
 //object to arrange the totals of each flavor ordered
 const flavorsTotal = {
   vanilla: vanillaTotal(flavors),
